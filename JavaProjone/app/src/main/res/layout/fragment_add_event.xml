@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryBack">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryBack"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/ralewayheavy"
+                android:textAllCaps="true"
+                android:text="Add Event"
+                android:textColor="@color/orange"
+                android:layout_marginTop="100dp"
+                android:textSize="30sp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@style/CounterText"
+                app:counterMaxLength="30"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:layout_margin="20dp"
+                    android:maxLength="30"
+                    android:ems="10"
+                    android:hint="Title"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/colorAccent"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/startdate"
+                    android:drawableLeft="@drawable/ic_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/colorAccent"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:hint="Start Date"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_event"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/colorAccent"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:hint="End Date"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@style/CounterText"
+                app:counterMaxLength="10"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:maxLength="10"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="Contact Details"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/add_event"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:textColor="@color/colorPrimary"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_gravity="center_horizontal"
+                 />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

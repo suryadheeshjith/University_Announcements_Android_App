@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_course"
+        android:icon="@drawable/ic_course"
+        android:title="Courses"
+        />
+
+
+    <item
+        android:id="@+id/nav_announcements"
+        android:icon="@drawable/ic_announcement_black_24dp"
+        android:title="Announcements"/>
+
+
+    <item
+        android:id="@+id/nav_club"
+        android:icon="@drawable/ic_club"
+        android:title="Clubs"/>
+
+    <item
+        android:id="@+id/nav_event"
+        android:icon="@drawable/ic_event"
+        android:title="Events"/>
+
+    <item
+        android:id="@+id/menu_none"
+        android:title=""
+        android:visible="false"/>
+
+</menu>

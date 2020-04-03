@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start"
+    > <!--To use a navigation bar we need to use DrawerLayout. fitsSystemWindow so that Nav bar draws over screen-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/Main">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            /><!-- Fills the part below toolbar-->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            app:menu="@menu/bottom_navigation"
+            android:background="@color/colorPrimaryDark"
+            app:itemTextColor="@color/orange"
+            app:itemIconTint="@color/orange"
+            /><!--To override the transparency, do this-->
+
+
+    </LinearLayout>
+    <steelkiwi.com.library.DotsLoaderView
+        android:id="@+id/dotsLoader"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dlv_item_drawable="@drawable/circle_background"
+        app:dlv_line_color="@color/point_color"
+        />
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/drawer_menu"
+        app:itemTextColor="@color/orange"
+        app:itemIconTint="@color/orange"/><!-- app: will determine what goes in the nav drawer, Header and menu both specified.Gravity must be start to avoid crashes. end for right side of screen but doesn't work(?)-->
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout><!-- This is the navigation drawer itself-->

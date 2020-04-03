@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryBack">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryBack"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/ralewayheavy"
+                android:textAllCaps="true"
+                android:text="Add Event"
+                android:textColor="@color/orange"
+                android:layout_marginTop="100dp"
+                android:textSize="30sp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@style/CounterText"
+                app:counterMaxLength="30"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:maxLength="30"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="Venue"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@style/CounterText"
+                app:counterMaxLength="30"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/target"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:layout_margin="20dp"
+                    android:maxLength="30"
+                    android:ems="10"
+                    android:hint="Target Audience"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/colorAccent"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alternate Coordinator"
+                android:fontFamily="@font/raleway"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="20dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@style/CounterText"
+                app:counterMaxLength="30"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name2"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/raleway"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:ems="10"
+                    android:maxLength="30"
+                    android:gravity="top|left"
+                    android:hint="Name"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/colorAccent"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@style/CounterText"
+                app:counterMaxLength="10"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contact2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:maxLength="10"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="Contact"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorAccent"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@style/CounterText"
+                app:counterMaxLength="10"
+                app:errorEnabled="true"
+                android:id="@+id/mgrID"
+                android:visibility="invisible"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mgr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:maxLength="10"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/orange"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="Manager Registrar ID"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/add_event"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:textColor="@color/colorPrimary"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
