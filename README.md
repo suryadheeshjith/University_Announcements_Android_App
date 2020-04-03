@@ -16,20 +16,15 @@ This android application will be useful for college students and faculty of a un
 
 
 **1. Login**
-
-<img src='Images/Login.png' width=300 height=615>
-
 **2. Home**
-
-<img src='Images/Home.png' width=300 height=615>
-
 **3. Adding an Event**
-
-<img src='Images/AddingEvent.png' width=300 height=615>
-
 **4. Navigation Drawer**
 
-<img src='Images/Nav_drawer.png' width=300 height=615>
+
+
+<img src='Images/Login.png' width=300 height=615> &nbsp; &nbsp; &nbsp; &nbsp; <img src='Images/Home.png' width=300 height=615>
+
+<img src='Images/AddingEvent.png' width=300 height=615> &nbsp; &nbsp; &nbsp; &nbsp; <img src='Images/Nav_drawer.png' width=300 height=615>
 
 
 
