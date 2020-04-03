@@ -16,9 +16,13 @@ This android application will be useful for college students and faculty of a un
 
 
 **1. Login**
+
 **2. Home**
+
 **3. Adding an Event**
+
 **4. Navigation Drawer**
+
 
 
 
